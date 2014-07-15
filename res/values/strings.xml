@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cardinal Health Pillcounter</string>
+    <string name="update_inventory">Update Inventory</string>
+    <string name="cancel">Cancel</string>
+    <string name="online_count">Online count</string>
+    <string name="current_count">Current count</string>
+    <string name="online_inventory">Online Inventory</string>
+    <string name="current_inventory">Current Inventory</string>
+    <string name="title_activity_pillcamera">Pill Camera</string>
+    <string name="title_activity_barcodecamera">Barcode Camera</string>
+    <string name="title_activity_barcodescanner">Barcode Scanner</string>
+    
+</resources>

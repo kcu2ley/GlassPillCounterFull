@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cardinalhealth.pillcounter"
+    android:versionCode="5"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_pill_50"
+        android:label="@string/app_name" >
+		<activity android:name="com.cardinalhealth.pillcounter.OnlineInventoryActivity"  android:immersive="true"/>
+        <activity android:name="com.cardinalhealth.pillcounter.CurrentInventoryActivity"  android:immersive="true"/>
+        <activity
+            android:name="com.cardinalhealth.pillcounter.PillCameraActivity"
+            android:label="@string/title_activity_pillcamera"  android:immersive="true"/>
+        <activity
+            android:name="com.cardinalhealth.pillcounter.BarcodeScannerActivity"
+            android:label="@string/title_activity_barcodescanner"  android:immersive="true">
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger_start" />
+        </activity>
+    </application>
+
+</manifest>
